@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "showDevDebugOutput": true,
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/sandbox-stm32-usb-hid-kbd.elf",
+            "name": "Debug STM32",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stlink",
+            "configFiles": [
+                "./stm32f1x_stlinkv2_dongle.cfg"
+            ]
+        }
+    ]
+}
